@@ -10,5 +10,5 @@ package ProjektJava;
  * @author Bartek
  */
 public class Projekt {
-    
+    //
 }
