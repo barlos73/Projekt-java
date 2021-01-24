@@ -25,7 +25,7 @@ public class Projekt {
       System.out.println("Podaj scierzke do pliku: ");
       Scanner scan = new Scanner(System.in);
       String scierzka = scan.next();
-
+      //testowanie
 
       int count =0;
       File file = new File(scierzka);
