@@ -1,4 +1,5 @@
 
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -25,7 +26,7 @@ public class Projekt {
       System.out.println("Podaj scierzke do pliku: ");
       Scanner scan = new Scanner(System.in);
       String scierzka = scan.next();
-
+      //testowanie
 
       int count =0;
       File file = new File(scierzka);
@@ -40,4 +41,6 @@ public class Projekt {
       System.out.println("Ilosc slow w pliku " +count);
    }
 }
+
  
+
