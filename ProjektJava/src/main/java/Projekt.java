@@ -1,5 +1,7 @@
 
 
+
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,35 +14,17 @@ import java.util.Scanner;
  * and open the template in the editor.
  */
 
-/**
- *
- * @author Bartek
- */
+
 public class Projekt {
 
-    /**
-     * @param args the command line arguments
-     */
+   
  public static void main(String[] args) throws FileNotFoundException, IOException {
 
-      System.out.println("Podaj scieżke do pliku: ");
+      System.out.println("Podaj ścieżke do pliku: ");
       Scanner scan = new Scanner(System.in);
-      String scieżka = scan.next();
-      //testowanie
+      String sciezka = scan.next();
+
 
       int count =0;
-      File file = new File(scieżka);
-      FileInputStream fis = new FileInputStream(file);
-      byte[] bytesArray = new byte[(int)file.length()];
-      fis.read(bytesArray);
-      String s = new String(bytesArray);
-      String [] data = s.split(" ");
-      for (int i=0; i<data.length; i++) {
-         count++;
-      }
-      System.out.println("Ilosc slow w pliku " +count);
-   }
-}
-
- 
+      File file = new File(sciezka);
 
