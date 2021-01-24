@@ -23,13 +23,13 @@ public class Projekt {
      */
  public static void main(String[] args) throws FileNotFoundException, IOException {
 
-      System.out.println("Podaj scierzke do pliku: ");
+      System.out.println("Podaj scieżke do pliku: ");
       Scanner scan = new Scanner(System.in);
-      String scierzka = scan.next();
+      String scieżka = scan.next();
       //testowanie
 
       int count =0;
-      File file = new File(scierzka);
+      File file = new File(scieżka);
       FileInputStream fis = new FileInputStream(file);
       byte[] bytesArray = new byte[(int)file.length()];
       fis.read(bytesArray);
